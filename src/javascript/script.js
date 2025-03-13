@@ -46,7 +46,7 @@ $(document).ready(function() {
         distance: '20%'
     });
 
-    ScrollReveal().reveal('#testimonial_chef', {
+    ScrollReveal().reveal('#doctor-img', {
         origin: 'left',
         duration: 1000,
         distance: '20%'
