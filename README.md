@@ -26,3 +26,8 @@ Welcome to VitalCare, a modern, responsive website designed to provide seamless 
 
 ## 🔗 Resources
 - **Website**: <a href="https://clinica-vitalcare.vercel.app/">Click here!</a>
+
+---
+<div align="center">
+  <p>Made with ❤️ by Matteo Ludovino</p>
+</div>
