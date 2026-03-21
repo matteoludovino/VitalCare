@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased bg-brand-50 text-gray-900;
+  }
+
+  ::selection {
+    @apply bg-brand-300 text-brand-900;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-20 md:py-28;
+  }
+
+  .container-narrow {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .reveal {
+    opacity: 0;
+  }
+
+  .reveal.is-visible {
+    @apply animate-fade-up;
+  }
+
+  .reveal-left.is-visible {
+    @apply animate-fade-left;
+  }
+
+  .reveal-right.is-visible {
+    @apply animate-fade-right;
+  }
+
+  .bg-gradient-brand {
+    background: linear-gradient(135deg, #f0fffe 0%, #d4f5f5 100%);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .blob {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brand-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brand-600;
+}
